@@ -1,7 +1,4 @@
-package com.leandroSJ;
-
-import java.util.Arrays;
-
+package main.com.leandroSJ;
 import static java.util.Arrays.deepToString;
 
 public class WorkingWith2DArrays {
@@ -12,10 +9,17 @@ public class WorkingWith2DArrays {
                 board[i][j] = '-';
             }
         }
+
+        char[][] boardTwo = new char [][]{
+                new char []{'0', '-', '-'},
+                new char []{'0', '-', '-'},
+                new char []{'0', '-', '-'}
+        };
         board[0][0] = '0';
         board[1][0] = '0';
         board[2][0] = '0';
 
         System.out.println(deepToString(board));
+        System.out.println(deepToString(boardTwo));
     }
 }
